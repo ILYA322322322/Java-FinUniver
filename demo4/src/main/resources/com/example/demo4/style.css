@@ -1,0 +1,13 @@
+.root {
+    -fx-background-color: #333333; /* Цвет фона */
+}
+
+.text-field {
+    -fx-prompt-text-fill: #4d4d4d; /* Цвет подсказки в текстовых полях */
+}
+
+.button {
+    -fx-background-color: #4d4d4d; /* Цвет кнопки */
+    -fx-text-fill: #ffffff; /* Цвет текста на кнопке */
+}
+

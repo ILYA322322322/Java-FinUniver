@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SampleController" stylesheets="@style.css" prefWidth="500" prefHeight="500">
+    <TextField fx:id="trainField" promptText="Поезд" prefWidth="200" />
+    <DatePicker fx:id="dataODatePicker" promptText="Дата отправления" prefWidth="200" />
+    <DatePicker fx:id="datePDatePicker" promptText="Дата прибытия" prefWidth="200" />
+    <TextField fx:id="vagonField" promptText="Вагон" prefWidth="200" />
+    <TextField fx:id="mestoField" promptText="Место" prefWidth="200" />
+    <TextField fx:id="cityGoField" promptText="Отправление" prefWidth="200" />
+    <TextField fx:id="cityToField" promptText="Прибытие" prefWidth="200" />
+    <Button fx:id="insertButton" text="Добавить" prefWidth="200" />
+
+    <TableView fx:id="tableView" prefWidth="500" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" />
+            <TableColumn fx:id="trainColumn" text="Train" />
+            <TableColumn fx:id="dataOColumn" text="DataO" />
+            <TableColumn fx:id="datePColumn" text="DateP" />
+            <TableColumn fx:id="vagonColumn" text="Vagon" />
+            <TableColumn fx:id="mestoColumn" text="Mesto" />
+            <TableColumn fx:id="cityGoColumn" text="CityGo" />
+            <TableColumn fx:id="cityToColumn" text="CityTo" />
+        </columns>
+    </TableView>
+</VBox>
